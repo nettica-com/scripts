@@ -55,6 +55,7 @@ response = requests.post(url, headers=headers, json=payload)
 # Check the response status code
 if response.status_code == 200:
     print('Network created successfully!')
+    print (json.dumps(response.json(), indent=2))
 else:
     print('Failed to create network:', response.status_code)
-    print(response.text)
+    print(json.dumps(response.json(), indent=2))
