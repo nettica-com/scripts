@@ -26,7 +26,7 @@ args = parser.parse_args()
 
 
 # Set the request URL
-url = 'https://dev.nettica.com/api/v1.0/net'
+url = 'https://my.nettica.com/api/v1.0/net'
 
 # Set the request headers
 headers = {
